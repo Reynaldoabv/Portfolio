@@ -19,6 +19,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
     </head>
     <body>
+        <!-- Navbar -->
         <div id="content">
             <header class="header links">
                 <a href="#"><img src="resources/images/Logo.jpg" alt="logo" class="logo"></a>
@@ -30,11 +31,13 @@
                         <span><a href="#contact">Contacts</a></span>
                     </div>                
             </header>
+            <!-- Cover Photo -->
             <div class="cover">
                 <h1>Reynaldo <strong>Borges</strong></h1>
                 <h2>Web Developer & UI Designer</h2>
                 <a href="#contact" class="button-cover">get in touch</a>
             </div>
+            <!-- About me section-->
             <div class="sidebar" id="aboutMe">
                 <h2 class="titles">About <strong>Me</strong></h2>
                 <p>Since I beginning my journey as a freelance Web Developer & UI Designer in 2017 I have been working remotely for agencies and collaborated with talented people in building digital products for both business and consumer use. 
@@ -68,6 +71,7 @@
                     </div>
                 </div>
             </div>
+            <!-- Portfolio Section -->
             <div class="portfolio" id="portfolio">
                     <h2 class="titles">My <strong>Portfolio</strong></h2>
                 <div class="grid-pics">
@@ -139,15 +143,18 @@
                     </div> 
                 </div>
             </div>
+            <!-- Second Photo section -->
             <div class="p-section">
                 <h2>Trust your project in the proper hands and look no more. 
                     As a Web developer I am focus on writing clean, elegant and efficient code.</h2>
                 <a href="#contact" class="button-section">Contact Me</a>    
             </div>
+            <!-- Services section -->
             <div class="services" id="services">
                 <h2 class="titles">My <strong>Services</strong></h2>
                 <p class="paragragh">Developing websites from designs and concepts is my passion. 
                    I use the lastest in Front-end development technologies such as HTML5, CSS3, Flex-Box, CSS-Grid, Bootstrap,  ES6 and jQuery  to create one of kind websites. 
+                   All my websites are fully responsive to ensure a good looking site across all screen sizes.
                    Working on interesting projects with nice people is definetly something I do love but more importantly I want your project to succeed and with me at your side, that's exactly what we will achieve.</p>
                 <div class="service">
                     <div>
@@ -160,13 +167,63 @@
                         <i class="fas fa-mobile-alt icons"><p>Responsive</p></i>
                     </div>
                     <div>
-                        <i class="fas fa-search icons"><p>SEO</p></i>
+                        <i class="fas fa-palette icons"><p>Customization</p></i>
                     </div>
                 </div>
             </div>
+            <!-- Clients section -->
             <div class="clients">
+                <div class="titles">
+                    <h2>What My </br><strong>Clients</strong> are saying</h2>
+                </div>
+                <div class="slider">
+                    <input type="radio" name="image" id="i1" checked>
+                    <input type="radio" name="image" id="i2">
+                    <input type="radio" name="image" id="i3">
 
+                    <div class="slider-img" id="one">
+                        <p>I hired Reynaldo to help us to create and develop our website. 
+                            He was very professional and very pleasant to work with. 
+                            We were able to accomplish our goal thanks to his skills and understanding. 
+                            He pays attention in making good aesthetics of the website as well as the functionality</p>
+                        <h5>Andrea Delgado</h5>
+                        <h6>Owner www.candykas.com</h6>   
+                        
+                        <label for="i3" class="pre"></label>
+                        <label for="i2" class="next"></label>
+                    </div>
+                    <div class="slider-img" id="two"> 
+                        <p>OkGoVacay is so pleased to have Reynaldo Borges as a development partner, We needed a website, ASAP and because of his efforts We were able to create a unique website and connect with our fans in short time. 
+                            We are looking forward to working with him again. 
+                            He’s the kind of developer you can trust with a project from start to finish.</p>
+                        <h5>Marisela Blanco</h5>
+                        <h6>Owner www.okgovacay.com</h6>
+                        
+                        <label for="i1" class="pre"></label>
+                        <label for="i3" class="next"></label>
+                    </div>
+                    <div class="slider-img" id="three">  
+                        <p>Reynaldo was suggested to me by a friend who saw his portfolio online. 
+                            He not only helped me designing the site I wanted but also developed it for me. 
+                            The work was done on time, on budget, and with a high degree of professionalism. 
+                            I will be working with Reynaldo in the future and would highly recommend his services to anyone.</p>
+                        <h5>Sebastian Delpiano</h5>
+                        <h6>Owner www.hdycia.cl</h6>
+                                
+                        <label for="i2" class="pre"></label>
+                        <label for="i1" class="next"></label>                      
+                    </div>
+
+                    <div class="nav">
+                    <label class="dots" id="dot1" for="i1"></label>
+                    <label class="dots" id="dot2" for="i2"></label>
+                    <label class="dots" id="dot3" for="i3"></label>
+
+
+                    </div>
+                </div>
             </div>
+            <!-- Contacts section -->
             <div class="contacts" id="contact">
                 
                 <div class="flip-card">
@@ -198,8 +255,11 @@
                     </div>
 
                 </div>
-                <div class="map"></div>
+                <div class="map">
+                    <div id="map"></div>
+                </div>
             </div>
+            <!-- Footer -->
             <footer class="footer">
                     <img src="resources/images/Logo.jpg" alt="logo" class="logo2">
                     <div>&copy;2018 Reynaldo Borges<br>
@@ -213,5 +273,13 @@
                     </div>
             </footer>
         </div>
+        <script>
+            function init(){
+
+            }
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7TrPWDn7O_URpoL7pX-tzg9uv_6kdlYI&callback=initMap"
+    async defer></script>
+
     </body>
 </html>
