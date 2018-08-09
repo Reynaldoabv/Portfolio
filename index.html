@@ -17,12 +17,15 @@
         <!-- Font awesome -->
         <!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">--> 
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous">
+
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
     <body>
         <!-- Navbar -->
         <div id="content">
             <header class="header links">
-                <a href="#"><img src="resources/images/Logo.jpg" alt="logo" class="logo"></a>
+                <a href="#"><img src="resources/images/Logo.jpg" alt="logo" class="logo flipInX"></a>
                     <div class="items">
                         <span><a href="#">Home</a></span>
                         <span><a href="#aboutMe">About me</a></span>
@@ -33,14 +36,14 @@
             </header>
             <!-- Cover Photo -->
             <div class="cover">
-                <h1>Reynaldo <strong>Borges</strong></h1>
-                <h2>Web Developer & UI Designer</h2>
+                <h1 class="lightSpeedIn">Hi, I'm Reynaldo <strong class="flash">Borges</strong></h1>
+                <h2 class="slideInLeft">Front-End Web Developer & UI Designer</h2>
                 <a href="#contact" class="button-cover">get in touch</a>
             </div>
             <!-- About me section-->
             <div class="sidebar" id="aboutMe">
-                <h2 class="titles">About <strong>Me</strong></h2>
-                <p>Since I beginning my journey as a freelance Web Developer & UI Designer in 2017 I have been working remotely for agencies and collaborated with talented people in building digital products for both business and consumer use. 
+                <h2 class="titles wow slideInLeft">About <strong>Me</strong></h2>
+                <p>Since I beginning my journey as a freelance Front-End Web Developer in 2017 I have been working remotely for clients and collaborated with talented people in building digital products for both business and consumer use. 
                     My passion for coding allow me to develop successful websites with both creativity and utility of modes of communication.</p>    
             </div>
             <div class="sidebar2">
@@ -73,7 +76,7 @@
             </div>
             <!-- Portfolio Section -->
             <div class="portfolio" id="portfolio">
-                    <h2 class="titles">My <strong>Portfolio</strong></h2>
+                    <h2 class="titles wow slideInLeft">My <strong>Portfolio</strong></h2>
                 <div class="grid-pics">
                     <div class="box-grid">
                         <div class="box-img">
@@ -151,7 +154,7 @@
             </div>
             <!-- Services section -->
             <div class="services" id="services">
-                <h2 class="titles">My <strong>Services</strong></h2>
+                <h2 class="titles wow slideInLeft">My <strong>Services</strong></h2>
                 <p class="paragragh">Developing websites from designs and concepts is my passion. 
                    I use the lastest in Front-end development technologies such as HTML5, CSS3, Flex-Box, CSS-Grid, Bootstrap,  ES6 and jQuery  to create one of kind websites. 
                    All my websites are fully responsive to ensure a good looking site across all screen sizes.
@@ -173,7 +176,7 @@
             </div>
             <!-- Clients section -->
             <div class="clients">
-                <div class="titles">
+                <div class="titles wow slideInLeft">
                     <h2>What My </br><strong>Clients</strong> are saying</h2>
                 </div>
                 <div class="slider">
@@ -227,7 +230,7 @@
             <div class="contacts" id="contact">
                 
                 <div class="flip-card">
-                        <h2 class="titles">My <strong>Contacts</strong></h2>
+                        <h2 class="titles wow slideInLeft">My <strong>Contacts</strong></h2>
                     <div class="main-container">
                         <div class="the-card">
                             <div class="the-front">
@@ -273,13 +276,13 @@
                     </div>
             </footer>
         </div>
+
+        <!-- JQuery -->
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script type="text/javscript" src="resources/js/main.js"></script>
+        <script type="text/javascript" src="resources/js/wow.min.js"></script>
         <script>
-            function init(){
-
-            }
+            new WOW().init();
         </script>
-        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7TrPWDn7O_URpoL7pX-tzg9uv_6kdlYI&callback=initMap"
-    async defer></script>
-
     </body>
 </html>

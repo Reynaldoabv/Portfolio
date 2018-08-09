@@ -43,7 +43,7 @@ img {
 
 .header  {
     grid-area: header;
-    background-color: #262626;
+    background-color: black;
     height: 70px;
 }
 
@@ -120,7 +120,7 @@ img {
     font-weight: bold;
     border: 3px solid var(--greenr);
     border-radius: 50px;
-    padding: 8px 10px;
+    padding: 5px 10px;
     margin-top: 10px;
     margin-left: 600px;
     cursor: pointer;
@@ -132,6 +132,20 @@ img {
     border: 3px solid #fff;
     background-color: #fff;
     transition-duration: 1s;
+}
+
+/* Animations */ 
+
+.lightSpeedIn {
+    animation-duration: 2s; 
+}
+
+.slideInLeft {
+    animation-duration: 2s; 
+}
+
+.flipInX {
+    animation-duration: 5s;
 }
 
 /* About Me */
@@ -163,7 +177,7 @@ img {
 
 .sidebar2 {
     grid-area: sidebar2;
-    background-color: var(--grayr);
+    background-color: var(--blackr);
 }
 
 .sidebar2 h2 {
@@ -172,7 +186,7 @@ img {
 
 .sidebar2 div {
     width: 80%;
-    background: #607d8b;
+    background: #5aabd3;
     height: 15px;
     border-radius: 4px;
     overflow: hidden;
@@ -182,6 +196,7 @@ img {
 
 .sidebar2 h3 {
     margin: 10px 5px 5px 50px;
+    color: #fff;
 }
 
 .html-bar::before {
@@ -197,7 +212,7 @@ img {
     content: '';
     width: 98%;
     height: 15px;
-    background: #3498db;
+    background: #076da8;
     position: absolute;
     left:0;
 }
