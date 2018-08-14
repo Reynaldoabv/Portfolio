@@ -22,6 +22,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     </head>
     <body>
+
+        <a href="#"><i class="fas fa-arrow-up back-to-top"></i></a>
+
         <!-- Navbar -->
         <div id="content">
             <header class="header links">
@@ -37,13 +40,32 @@
             <!-- Cover Photo -->
             <div class="cover">
                 <h1 class="lightSpeedIn">Hi, I'm Reynaldo <strong class="flash">Borges</strong></h1>
-                <h2 class="slideInLeft">Front-End Web Developer & UI Designer</h2>
-                <a href="#contact" class="button-cover">get in touch</a>
+                <h2 class="slideInLeft">Front-End Developer & UI Designer</h2>
+                <a href="#" class="button-cover" id="button-cover">Get in touch</a>
             </div>
+            <!-- Contact Modal -->
+            <div class="contact-modal" id="contact-modal">
+                <button class="modal-close">
+                        <i class="fas fa-times"></i>
+                </button>                
+                <div class="contact-modal-header">
+                    <div class="contact-modal-title-box">
+                        <h2 class="contact-modal-title">Contacts</h2>
+                    </div>
+                </div><!-- Close portfolio header -->
+                <div class="contact-modal-content">
+                    <div class="contact-modal-content-bg">
+                        <h2>Reynaldo Borges</h2>
+                        <p>+56 940 75 66 21</p>
+                        <p>reynaldob.webdev@gmail.com</p>
+                        <p>Providencia, Santiago - Chile</p>
+                    </div>
+                </div>
+            </div><!-- Close Modal -->
             <!-- About me section-->
             <div class="sidebar" id="aboutMe">
                 <h2 class="titles wow slideInLeft">About <strong>Me</strong></h2>
-                <p>Since I beginning my journey as a freelance Front-End Web Developer in 2017 I have been working remotely for clients and collaborated with talented people in building digital products for both business and consumer use. 
+                <p>Since I beginning my journey as a freelance Front-End Developer in 2017 I have been working remotely for clients and collaborated with talented people in building digital products for both business and consumer use. 
                     My passion for coding allow me to develop successful websites with both creativity and utility of modes of communication.</p>    
             </div>
             <div class="sidebar2">
@@ -271,7 +293,7 @@
                     <div class="icons-footer">
                         <a href="https://github.com/Reynaldoabv" target="_blank"><i class="fab fa-github"></i></a>
                         <a href="https://linkedin.com/in/reynaldo-borges" target="_blank"><i class="fab fa-linkedin"></i></a>
-                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.instagram.com/reynaldo.webdev/" target="_blank"><i class="fab fa-instagram"></i></a>
                         <a href="https://codepen.io/reynaldobv/#" target="_blank"><i class="fab fa-codepen"></i></a>
                     </div>
             </footer>
@@ -279,7 +301,7 @@
 
         <!-- JQuery -->
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-        <script type="text/javscript" src="resources/js/main.js"></script>
+        <script type="text/javascript" src="resources/js/main.js"></script>
         <script type="text/javascript" src="resources/js/wow.min.js"></script>
         <script>
             new WOW().init();

@@ -134,6 +134,94 @@ img {
     transition-duration: 1s;
 }
 
+/* Contact modal */
+
+.contact-modal {
+    position: fixed;
+    z-index: 10;
+    top: 11em;
+    right: 15em;
+    bottom: 11em;
+    left: 15em;
+    background: #fff;
+    box-shadow: 0 0 0 12em rgba(black, .5);
+
+    display: none;
+}
+
+/*.is-open {
+    display: block;
+}*/
+
+
+
+.contact-modal-header {
+    text-align: left;
+    padding: 5em 0;
+    background-image: url("../images/contact-modal5.jpeg");
+    background-size: cover;
+    background-position: center;
+}
+
+.contact-modal-title-box {
+    background-color: var(--greenr);
+    padding: 2em 0 2em 2em;
+    color: #fff;
+    width: 30%;
+    opacity: 0.7;
+}
+
+.contact-modal-title {
+    font-size: 2rem;
+    display: inline-block;
+}
+
+.contact-modal-title::after {
+    content: "";
+    display: block;
+    height: 1px;
+    margin: 0.5em 0;
+    background: #fff;
+    width: 100%
+}
+
+.contact-modal-content h2 {
+    font-size: 2rem;
+    padding: 5px;
+}
+
+.contact-modal-content p {
+    line-height: 1.5rem;
+}
+
+.contact-modal-content {
+    background-color: var(--greenr);
+    height: 32%;
+    text-align: center;
+    padding-top: 15px;
+}
+
+.contact-modal-content-bg {
+    background-color: var(--blackr);
+    margin: 0px 15px 15px 15px;
+    height: 85%;
+    color: #fff;
+}
+
+.modal-close {
+    background: transparent;
+    position: fixed;
+    border-radius: 50%;
+    border: 0;
+    width: 2em;
+    height: 2em;
+    box-shadow: 0 0 5px rgba(black, .5);
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
 /* Animations */ 
 
 .lightSpeedIn {
@@ -670,6 +758,7 @@ img {
 #i3:checked ~ .nav #dot3 {
     background: #fff;
 }
+
 /* Contacts */
 
 .contacts {
@@ -716,7 +805,7 @@ img {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
-    background: var(--blackr);
+    background: black;
     color: #fff;
     text-align: center;
     border-radius: 20px;
@@ -773,11 +862,26 @@ img {
     height: 500px;
 }
 
+/* Jquery back to top button */
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px;
+    background-color: var(--greenr);
+    color: #fff;
+    font-size: 25px;
+    border-radius: 5px;
+    display: hide;
+    z-index: 20;
+}
+
 /* Footer */
 
 .footer {
     grid-area: footer;
-    background-color: var(--blackr);
+    background-color: black;
     color: #fff;
     text-align: center;
 }
