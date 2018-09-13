@@ -28,14 +28,15 @@
         <!-- Navbar -->
         <div id="content">
             <header class="header links">
-                <a href="#"><img src="resources/images/Logo.jpg" alt="logo" class="logo flipInX"></a>
+                <img src="resources/images/Logo.jpg" alt="logo" class="logo flipInX">
                     <div class="items">
                         <span><a href="#">Home</a></span>
                         <span><a href="#aboutMe">About me</a></span>
                         <span><a href="#portfolio">Portfolio</a></span>
                         <span><a href="#services">Services</a></span>
                         <span><a href="#contact">Contacts</a></span>
-                    </div>                
+                    </div>   
+                    <i class="fas fa-bars flipInX"></i>
             </header>
             <!-- Cover Photo -->
             <div class="cover">
@@ -43,25 +44,25 @@
                 <h2 class="slideInLeft">Front-End Developer & UI Designer</h2>
                 <a href="#" class="button-cover" id="button-cover">Get in touch</a>
             </div>
-            <!-- Contact Modal -->
-            <div class="contact-modal" id="contact-modal">
-                <button class="modal-close">
+            <!-- Contact Slide Up / Down -->
+            <div class="contact-slide" id="contact-slide">
+                <button class="slide-close">
                         <i class="fas fa-times"></i>
                 </button>                
-                <div class="contact-modal-header">
-                    <div class="contact-modal-title-box">
-                        <h2 class="contact-modal-title">Contacts</h2>
+                <div class="contact-slide-header">
+                    <div class="contact-slide-title-box">
+                        <h2 class="contact-slide-title">Contacts</h2>
                     </div>
-                </div><!-- Close portfolio header -->
-                <div class="contact-modal-content">
-                    <div class="contact-modal-content-bg">
+                </div><!-- Close slide header -->
+                <div class="contact-slide-content">
+                    <div class="contact-slide-content-bg">
                         <h2>Reynaldo Borges</h2>
                         <p>+56 940 75 66 21</p>
                         <p>reynaldob.webdev@gmail.com</p>
                         <p>Providencia, Santiago - Chile</p>
                     </div>
                 </div>
-            </div><!-- Close Modal -->
+            </div><!-- Close slide -->
             <!-- About me section-->
             <div class="sidebar" id="aboutMe">
                 <h2 class="titles wow slideInLeft">About <strong>Me</strong></h2>
@@ -281,7 +282,9 @@
 
                 </div>
                 <div class="map">
-                    <div id="map"></div>
+                    <div id="map">
+
+                    </div>
                 </div>
             </div>
             <!-- Footer -->
@@ -305,6 +308,12 @@
         <script type="text/javascript" src="resources/js/wow.min.js"></script>
         <script>
             new WOW().init();
+        </script>
+
+        <!-- Google Maps -->
+        
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB7TrPWDn7O_URpoL7pX-tzg9uv_6kdlYI&callback=initMap"
+        async defer>
         </script>
     </body>
 </html>

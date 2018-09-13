@@ -21,6 +21,18 @@ img {
     width: 100%;
 }
 
+/* Scroll bar */
+
+body::-webkit-scrollbar {
+    width: 10px;
+    background: var(--blackr);
+}
+
+body::-webkit-scrollbar-thumb {
+    background: var(--greenr);
+    border-radius: 5px;
+}
+
 #content {
     max-height: 1366px;
     display: grid;
@@ -41,10 +53,15 @@ img {
         "footer footer footer footer footer footer footer footer"
     }
 
+    /* Header */
+
 .header  {
     grid-area: header;
     background-color: black;
+    width: 100%;
     height: 70px;
+    position: fixed;
+    z-index: 25;
 }
 
 .logo {
@@ -81,6 +98,12 @@ img {
     margin-right: 100px;
 }
 
+.header .fas {
+   display: none;
+}
+
+/* Cover */
+
 .cover {
     grid-area: cover;
     background-image: url("../images/programming4.jpeg");
@@ -108,7 +131,7 @@ img {
 
 .cover strong {
    color: var(--greenr);
-   font-weight: bold;
+   /*font-weight: bold;*/
 }
 
 .button-cover {
@@ -134,9 +157,9 @@ img {
     transition-duration: 1s;
 }
 
-/* Contact modal */
+/* Contact Slide Up-Down */
 
-.contact-modal {
+.contact-slide {
     position: fixed;
     z-index: 10;
     top: 11em;
@@ -149,13 +172,8 @@ img {
     display: none;
 }
 
-/*.is-open {
-    display: block;
-}*/
 
-
-
-.contact-modal-header {
+.contact-slide-header {
     text-align: left;
     padding: 5em 0;
     background-image: url("../images/contact-modal5.jpeg");
@@ -163,7 +181,7 @@ img {
     background-position: center;
 }
 
-.contact-modal-title-box {
+.contact-slide-title-box {
     background-color: var(--greenr);
     padding: 2em 0 2em 2em;
     color: #fff;
@@ -171,12 +189,12 @@ img {
     opacity: 0.7;
 }
 
-.contact-modal-title {
+.contact-slide-title {
     font-size: 2rem;
     display: inline-block;
 }
 
-.contact-modal-title::after {
+.contact-slide-title::after {
     content: "";
     display: block;
     height: 1px;
@@ -185,30 +203,30 @@ img {
     width: 100%
 }
 
-.contact-modal-content h2 {
+.contact-slide-content h2 {
     font-size: 2rem;
     padding: 5px;
 }
 
-.contact-modal-content p {
+.contact-slide-content p {
     line-height: 1.5rem;
 }
 
-.contact-modal-content {
+.contact-slide-content {
     background-color: var(--greenr);
     height: 32%;
     text-align: center;
     padding-top: 15px;
 }
 
-.contact-modal-content-bg {
+.contact-slide-content-bg {
     background-color: var(--blackr);
-    margin: 0px 15px 15px 15px;
-    height: 85%;
+    margin: -5px 10px 10px 10px;
+    height: 95%;
     color: #fff;
 }
 
-.modal-close {
+.slide-close {
     background: transparent;
     position: fixed;
     border-radius: 50%;
@@ -247,10 +265,6 @@ img {
     padding: 30px;
 }
 
-.sidebar p {
-    /*margin: 20px;*/
-}
-
 .sidebar h2 strong {
     color: var(--greenr);
  }
@@ -266,10 +280,6 @@ img {
 .sidebar2 {
     grid-area: sidebar2;
     background-color: var(--blackr);
-}
-
-.sidebar2 h2 {
-    padding: 10px 0px 2px 0px;
 }
 
 .sidebar2 div {
@@ -491,7 +501,7 @@ img {
     position: relative;
     width: 300px;
     height: 200px;
-    background: #ff1;
+    background: #000;
     margin: 10px;
     box-sizing: border-box;
     display: inline-block;
@@ -857,8 +867,12 @@ img {
 }
 
 .map {
-    background: #ff1;
     width: 70%;
+    height: 500px;
+}
+
+#map {
+    width: 100%;
     height: 500px;
 }
 
@@ -915,4 +929,305 @@ img {
 .icons-footer a:hover {
     color: var(--greenr);
     transition-duration: 500ms;
+}
+
+@media only screen and (max-width: 550px) {
+
+    /* Scroll bar */
+
+    ::-webkit-scrollbar {
+        width: 10px;
+        background: var(--blackr);
+    }
+
+    ::-webkit-scrollbar-thumb {
+        background: var(--greenr);
+        border-radius: 5px;
+    }
+
+    #content {
+        display: grid;
+        max-height: 550px;
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: minmax(50px, auto);
+        grid-gap: 10px;
+        }
+
+    /* Header */ 
+
+    .header  {
+        grid-column: 1 / -1;
+        position: static;
+    }
+
+    .logo {
+        height: 60px;
+        width: auto;
+        margin-left: 20px;
+    }
+
+    .links a {
+        display: none;
+    }
+
+    .header .fas {
+        font-size: 30px;
+        color: var(--greenr);
+        display: block;
+        margin-right: 50px;
+    }
+
+    /* cover photo */
+
+    .cover {
+        grid-column: 1 / -1;
+        background-position: right;
+        height: 90vh;
+        max-width: 550px;
+    }
+
+    .cover h1 {
+        font-size: 35px;
+        padding-top: 100px;
+    }
+    
+    .cover h2 {
+        font-size: 25px; 
+        padding: 50px;
+    }
+
+    .button-cover {
+        font-size: 10px;
+        padding: 5px 10px;
+        margin-top: 10px;
+        margin-left: 220px;
+    }
+
+    .main {
+        display: none;
+    }
+
+
+
+
+    /* Contact Slide Up-Down */
+
+    .contact-slide {
+        position: fixed;
+        top: 7em;
+        right: 3em;
+        bottom: 11em;
+        left: 3em;
+    }
+
+    .contact-slide-title-box {
+        padding: 1.5em 0 1em 1.5em;
+        width: 25%;
+        opacity: 0.8;
+    }
+
+    .contact-slide-title {
+        font-size: 1.5rem;
+    }
+
+    .contact-slide-content h2 {
+        font-size: 1.5rem;
+    }
+
+    .contact-slide-content {
+        height: 50%;
+        padding-top: 5px;
+    }
+
+    .contact-slide-content-bg {
+        margin: 5px 5px 5px 5px;
+        height: 90%;
+}
+
+    /* Titles */
+
+    .titles {
+        font-size: 25px;
+        padding: 30px 0px 30px 0px;
+    }
+
+    /* About me */
+
+    .sidebar {
+        grid-column: 1 / -1;
+    }
+
+    .sidebar p {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    /* Skills */
+
+    .sidebar2 {
+        grid-column: 1 / -1;
+        height: 200px;
+    }
+    
+    .sidebar2 div {
+        height: 8px;
+    }
+    
+    .sidebar2 h3 {
+        margin: 10px 5px 10px 50px;
+        font-size: 10px;
+    }
+    
+    .html-bar::before {
+        height: 8px;
+    }
+    
+    .css-bar::before {
+        height: 8px;
+    }
+    
+    .bootstrap-bar::before {
+        height: 8px;
+    }
+    
+    .jquery-bar::before {
+        height: 8px;
+    }
+    
+    .js-bar::before {
+        height: 8px;
+    }
+
+    /* Portfolio */ 
+
+    .grid-pics {
+        width: 550px;
+        height: 2000px;
+    }
+
+    .grid-pics .box-grid {
+        width: 71%;
+        height: 250px;
+        margin: 0 auto;
+        border-radius: 10px;
+    }
+
+    .grid-pics .box-grid .details {
+        width: 370px;
+        height: 230px;
+        border-radius: 10px;
+    }
+
+    /* Photo section */
+
+    .p-section {
+        grid-column: 1 / -1;
+        font-size: 14px;
+        height: 85vh;
+    }
+    
+    .p-section h2 {
+        width: 250px;
+        line-height: 2rem;
+    }
+    
+    .button-section {
+        font-size: 10px;
+        margin-left: 180px;
+        padding: 8px 10px;
+    }
+
+    /* Services */
+
+    .services {
+        grid-column: 1 / -1;
+        width: 550px;
+    }
+    
+    .service {
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .paragragh {
+        font-size: 12px;
+        width: 400px;
+        margin: 0 auto;
+    }
+    .icons {
+        font-size: 40px;
+    }
+    
+    .icons p {
+        font-size: 25px;
+    }
+
+    /* CLients */
+
+    .clients {
+        grid-column: 1 / -1;
+        background-image: url("../images/mobile-client.jpeg");
+        height: 90vh;
+    }
+
+    .slider {
+        margin: 0 auto;
+        margin-right: 50px;
+        width: 450px;
+        height: 240px;
+    }
+
+    .slider p {
+        width: 300px;
+        text-align: left;
+        padding: 15px 10px 5px 70px;
+        line-height: 20px;
+        font-size: 15px;
+    }
+    
+    .slider h5 {
+        color: var(--greenr);
+        padding: 15px 0px 15px 0px;
+        font-size: 15px;
+        text-align: center;
+    }
+    
+    .slider h6 {
+        padding-left: 0px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    /* Contact */
+
+    .contacts {
+        grid-column: 1 / -1;
+        display: block;
+        height: 960px;
+    }
+
+    .flip-card {
+        width: 100%;
+        height: 500px;
+    }
+    
+    .the-card {
+        left: 50%;
+    }
+
+    .map {
+        width: 100%;
+        height: 90vh;
+    }
+
+    #map {
+        height: 460px;
+    }
+
+    /* Back to top button */
+
+    .back-to-top {
+        padding: 12px;
+        font-size: 20px;
+    }
 }
