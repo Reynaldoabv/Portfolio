@@ -95,7 +95,7 @@ body::-webkit-scrollbar-thumb {
 }
 
 .items {
-    margin-right: 100px;
+    margin-left: 350px;
 }
 
 .header .fas {
@@ -931,9 +931,9 @@ body::-webkit-scrollbar-thumb {
     transition-duration: 500ms;
 }
 
-@media only screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
 
-    /* Scroll bar */
+    /* Scroll bar 
 
     ::-webkit-scrollbar {
         width: 10px;
@@ -943,7 +943,7 @@ body::-webkit-scrollbar-thumb {
     ::-webkit-scrollbar-thumb {
         background: var(--greenr);
         border-radius: 5px;
-    }
+    }*/
 
     #content {
         display: grid;
@@ -970,7 +970,7 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
-    .header .fas {
+    .menu-bar .fas {
         font-size: 30px;
         color: var(--greenr);
         display: block;
@@ -983,7 +983,7 @@ body::-webkit-scrollbar-thumb {
         grid-column: 1 / -1;
         background-position: right;
         height: 90vh;
-        max-width: 550px;
+        max-width: 100%;
     }
 
     .cover h1 {
@@ -1101,12 +1101,12 @@ body::-webkit-scrollbar-thumb {
     /* Portfolio */ 
 
     .grid-pics {
-        width: 550px;
+        width: 100%;
         height: 2000px;
     }
 
     .grid-pics .box-grid {
-        width: 71%;
+        width: 81%;
         height: 250px;
         margin: 0 auto;
         border-radius: 10px;
@@ -1127,7 +1127,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .p-section h2 {
-        width: 250px;
+        width: 60%;
         line-height: 2rem;
     }
     
@@ -1141,7 +1141,7 @@ body::-webkit-scrollbar-thumb {
 
     .services {
         grid-column: 1 / -1;
-        width: 550px;
+        width: 100%;
     }
     
     .service {
@@ -1151,7 +1151,7 @@ body::-webkit-scrollbar-thumb {
 
     .paragragh {
         font-size: 12px;
-        width: 400px;
+        width: 80%;
         margin: 0 auto;
     }
     .icons {
@@ -1168,17 +1168,17 @@ body::-webkit-scrollbar-thumb {
         grid-column: 1 / -1;
         background-image: url("../images/mobile-client.jpeg");
         height: 90vh;
+        width: 100%;
     }
 
     .slider {
         margin: 0 auto;
-        margin-right: 50px;
-        width: 450px;
+        width: 90%;
         height: 240px;
     }
 
     .slider p {
-        width: 300px;
+        width: 70%;
         text-align: left;
         padding: 15px 10px 5px 70px;
         line-height: 20px;
@@ -1193,10 +1193,11 @@ body::-webkit-scrollbar-thumb {
     }
     
     .slider h6 {
-        padding-left: 0px;
+        padding-left: 1px;
         font-size: 13px;
         text-align: center;
     }
+
 
     /* Contact */
 
@@ -1212,7 +1213,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .the-card {
-        left: 50%;
+        left: 40%;
     }
 
     .map {
@@ -1222,6 +1223,7 @@ body::-webkit-scrollbar-thumb {
 
     #map {
         height: 460px;
+        width: 100%;
     }
 
     /* Back to top button */
@@ -1229,5 +1231,11 @@ body::-webkit-scrollbar-thumb {
     .back-to-top {
         padding: 12px;
         font-size: 20px;
+    }
+
+    /* Footer */
+
+    .footer {
+        width: 100%;
     }
 }
