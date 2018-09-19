@@ -1133,7 +1133,7 @@ body::-webkit-scrollbar-thumb {
         grid-column: 1 / -1;
         font-size: 18px;
         height: 85vh;
-        background-image: url("../images/mobile-section.jpeg");
+        background-image: url("../images/mobile-section2.jpeg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -1146,6 +1146,7 @@ body::-webkit-scrollbar-thumb {
         width: 50%;
         line-height: 2rem;
         padding-left: 45%;
+        padding-right: 0%;
     }
     
     .button-section {
