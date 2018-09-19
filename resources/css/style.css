@@ -985,15 +985,16 @@ body::-webkit-scrollbar-thumb {
         height: auto;
     }
 
-
-
     /* cover photo */
 
     .cover {
         grid-column: 1 / -1;
-        background-position: right;
-        height: 90vh;
         max-width: 100%;
+        background-image: url("../images/mobile-cover.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        height: 90vh;
     }
 
     .cover h1 {
@@ -1016,9 +1017,6 @@ body::-webkit-scrollbar-thumb {
     .main {
         display: none;
     }
-
-
-
 
     /* Contact Slide Up-Down */
 
@@ -1133,18 +1131,26 @@ body::-webkit-scrollbar-thumb {
 
     .p-section {
         grid-column: 1 / -1;
-        font-size: 14px;
+        font-size: 18px;
         height: 85vh;
+        background-image: url("../images/mobile-section.jpeg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        background-position: center;
+        opacity: 0.9;
+        color: #fff;
     }
     
     .p-section h2 {
         width: 50%;
         line-height: 2rem;
+        padding-left: 45%;
     }
     
     .button-section {
-        font-size: 10px;
-        margin-left: 25%;
+        font-size: 14px;
+        margin-left: 45%;
         padding: 8px 10px;
     }
 
@@ -1181,7 +1187,7 @@ body::-webkit-scrollbar-thumb {
 
     .clients {
         grid-column: 1 / -1;
-        background-image: url("../images/mobile-client.jpeg");
+        background-image: url("../images/mobile-client4.jpeg");
         height: 100vh;
         width: 100%;
     }
@@ -1218,16 +1224,11 @@ body::-webkit-scrollbar-thumb {
     .contacts {
         grid-column: 1 / -1;
         display: block;
-        height: 960px;
+        height: 460px;
     }
 
     .flip-card {
-        width: 100%;
-        height: 500px;
-    }
-    
-    .the-card {
-        left: 20%;
+        display: none;
     }
 
     .map {
