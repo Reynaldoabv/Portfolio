@@ -931,7 +931,7 @@ body::-webkit-scrollbar-thumb {
     transition-duration: 500ms;
 }
 
-@media screen and (max-width: 480px) {
+@media (max-width: 375px) and (min-width: 320px) {
 
     /* Scroll bar 
 
@@ -948,6 +948,8 @@ body::-webkit-scrollbar-thumb {
     #content {
         display: grid;
         max-height: 550px;
+        max-width: 375px;
+        min-width: 320px;
         grid-template-columns: repeat(6, 1fr);
         grid-auto-rows: minmax(50px, auto);
         grid-gap: 10px;
@@ -958,6 +960,7 @@ body::-webkit-scrollbar-thumb {
     .header  {
         grid-column: 1 / -1;
         position: static;
+        width: 100%;
     }
 
     .logo {
@@ -970,12 +973,19 @@ body::-webkit-scrollbar-thumb {
         display: none;
     }
 
+    .items {
+        margin-left: 1px;
+    }
+
     .menu-bar .fas {
         font-size: 30px;
         color: var(--greenr);
         display: block;
-        margin-right: 50px;
+        width: 80%;
+        height: auto;
     }
+
+
 
     /* cover photo */
 
@@ -1000,7 +1010,7 @@ body::-webkit-scrollbar-thumb {
         font-size: 10px;
         padding: 5px 10px;
         margin-top: 10px;
-        margin-left: 220px;
+        margin-left: 40%;
     }
 
     .main {
@@ -1022,7 +1032,7 @@ body::-webkit-scrollbar-thumb {
 
     .contact-slide-title-box {
         padding: 1.5em 0 1em 1.5em;
-        width: 25%;
+        width: 40%;
         opacity: 0.8;
     }
 
@@ -1060,6 +1070,7 @@ body::-webkit-scrollbar-thumb {
     .sidebar p {
         font-size: 15px;
         text-align: center;
+        width: 100%;
     }
 
     /* Skills */
@@ -1102,19 +1113,19 @@ body::-webkit-scrollbar-thumb {
 
     .grid-pics {
         width: 100%;
-        height: 2000px;
+        height: 1350px;
     }
 
     .grid-pics .box-grid {
         width: 81%;
-        height: 250px;
+        height: 12.5%;
         margin: 0 auto;
         border-radius: 10px;
     }
 
     .grid-pics .box-grid .details {
-        width: 370px;
-        height: 230px;
+        width: 93%;
+        height: 90%;
         border-radius: 10px;
     }
 
@@ -1127,13 +1138,13 @@ body::-webkit-scrollbar-thumb {
     }
     
     .p-section h2 {
-        width: 60%;
+        width: 50%;
         line-height: 2rem;
     }
     
     .button-section {
         font-size: 10px;
-        margin-left: 180px;
+        margin-left: 25%;
         padding: 8px 10px;
     }
 
@@ -1153,13 +1164,17 @@ body::-webkit-scrollbar-thumb {
         font-size: 12px;
         width: 80%;
         margin: 0 auto;
+        line-height: 1.5rem;
+        padding: 2%;
     }
+
     .icons {
-        font-size: 40px;
+        font-size: 35px;
+        margin: 30px 70px;
     }
     
     .icons p {
-        font-size: 25px;
+        font-size: 20px;
     }
 
     /* CLients */
@@ -1167,22 +1182,22 @@ body::-webkit-scrollbar-thumb {
     .clients {
         grid-column: 1 / -1;
         background-image: url("../images/mobile-client.jpeg");
-        height: 90vh;
+        height: 100vh;
         width: 100%;
     }
 
     .slider {
         margin: 0 auto;
-        width: 90%;
-        height: 240px;
+        width: 95%;
+        height: 300px;
     }
 
     .slider p {
-        width: 70%;
+        width: 60%;
         text-align: left;
         padding: 15px 10px 5px 70px;
-        line-height: 20px;
-        font-size: 15px;
+        line-height: 18px;
+        font-size: 13px;
     }
     
     .slider h5 {
@@ -1198,7 +1213,6 @@ body::-webkit-scrollbar-thumb {
         text-align: center;
     }
 
-
     /* Contact */
 
     .contacts {
@@ -1213,7 +1227,7 @@ body::-webkit-scrollbar-thumb {
     }
     
     .the-card {
-        left: 40%;
+        left: 20%;
     }
 
     .map {
@@ -1229,6 +1243,9 @@ body::-webkit-scrollbar-thumb {
     /* Back to top button */
 
     .back-to-top {
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
         padding: 12px;
         font-size: 20px;
     }
