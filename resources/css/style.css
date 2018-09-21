@@ -70,11 +70,6 @@ body::-webkit-scrollbar-thumb {
     margin-left: 100px;
 }
 
-.logo2 {
-    height: 70px;
-    width: auto;
-}
-
 .links {
     display: flex;
     align-items: center;
@@ -267,6 +262,10 @@ body::-webkit-scrollbar-thumb {
 
 .sidebar h2 strong {
     color: var(--greenr);
+ }
+
+ .sidebar p {
+     text-align: justify;
  }
 
 /* Titles */
@@ -583,6 +582,7 @@ body::-webkit-scrollbar-thumb {
     padding: 40px;
     line-height: 3rem;
     text-shadow: 2px 2px black;
+    text-align: justify;
 }
 
 .button-section {
@@ -624,13 +624,12 @@ body::-webkit-scrollbar-thumb {
     font-weight: bold;
  }
 
-.paragragh {
+.services p {
     font-size: 18px;
     line-height: 2rem;
-    text-align: center;
-    padding: 0px 60px 0px 60px;
-    margin-bottom: 40px;
     color: #fff;
+    text-align: justify;
+    padding: 0px 30px;
 }
 
 .service {
@@ -654,6 +653,7 @@ body::-webkit-scrollbar-thumb {
 .icons p {
     color: #fff;
     padding-top: 10px;
+    font-size: 25px;
 }
 
 /* Clientes */
@@ -687,7 +687,7 @@ body::-webkit-scrollbar-thumb {
 
 .slider p {
     width: 400px;
-    text-align: left;
+    text-align: justify;
     padding: 20px 15px 5px 75px;
     line-height: 20px;
 }
@@ -900,6 +900,11 @@ body::-webkit-scrollbar-thumb {
     text-align: center;
 }
 
+.logo2 {
+    height: 70px;
+    width: auto;
+}
+
 .footer h2 {
     padding-top: 10px;
 }
@@ -966,7 +971,7 @@ body::-webkit-scrollbar-thumb {
     .logo {
         height: 60px;
         width: auto;
-        margin-left: 20px;
+        margin-left: 0px;
     }
 
     .links a {
@@ -977,19 +982,18 @@ body::-webkit-scrollbar-thumb {
         margin-left: 1px;
     }
 
-    .menu-bar .fas {
+    .menu-bar .flipInX {
         font-size: 30px;
         color: var(--greenr);
         display: block;
-        width: 80%;
-        height: auto;
+        padding-right: 20px;
     }
 
     /* cover photo */
 
     .cover {
         grid-column: 1 / -1;
-        max-width: 100%;
+        max-width: 375px;
         background-image: url("../images/mobile-cover.jpg");
         background-repeat: no-repeat;
         background-attachment: fixed;
@@ -1067,7 +1071,6 @@ body::-webkit-scrollbar-thumb {
 
     .sidebar p {
         font-size: 15px;
-        text-align: center;
         width: 100%;
     }
 
@@ -1132,8 +1135,9 @@ body::-webkit-scrollbar-thumb {
     .p-section {
         grid-column: 1 / -1;
         font-size: 18px;
+        max-width: 375px;
         height: 85vh;
-        background-image: url("../images/mobile-section2.jpeg");
+        background-image: url("../images/mobile-section.jpeg");
         background-repeat: no-repeat;
         background-attachment: fixed;
         background-size: cover;
@@ -1167,12 +1171,8 @@ body::-webkit-scrollbar-thumb {
         justify-content: space-around;
     }
 
-    .paragragh {
-        font-size: 12px;
-        width: 80%;
-        margin: 0 auto;
-        line-height: 1.5rem;
-        padding: 2%;
+    .services p {
+        font-size: 14px;
     }
 
     .icons {
@@ -1201,7 +1201,6 @@ body::-webkit-scrollbar-thumb {
 
     .slider p {
         width: 60%;
-        text-align: left;
         padding: 15px 10px 5px 70px;
         line-height: 18px;
         font-size: 13px;
