@@ -1,28 +1,21 @@
 $("document").ready(function(){
 
     /* Navbar */
-
     $('.hamburger-icon').click(function(){
         $('.hamburger-icon').toggleClass('active');
-        $('#items').slideDown(3000);     
-    })
-
-    $('.hamburger-icon').click(function(){
-        $('#items').slideUp(3000);
+        $('#items').slideToggle(800);    
     })
 
     /* Contact SlideUp / Down */ 
-
     $("#button-cover").click(function(){
-        $("#contact-slide").slideDown(500);
+        $("#contact-slide").fadeIn(500);
     });
 
     $(".slide-close").click(function(){
-        $("#contact-slide").slideUp(1000);
+        $("#contact-slide").fadeOut(500);
     });
 
     /* Back to top button */
-
     var btt = $(".back-to-top");
 
     btt.on("click", function(e) {
@@ -48,7 +41,7 @@ $("document").ready(function(){
     });
 
 });
-
+    /* Map */
     function initMap(){
         // Map options 
         var options = {
