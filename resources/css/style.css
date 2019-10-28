@@ -499,6 +499,7 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
     display: inline-block;
     overflow: hidden;
+    border-radius: 10px;
 }
 
 .grid-pics .box-grid .box-img {
@@ -1030,6 +1031,7 @@ body::-webkit-scrollbar-thumb {
 
     .grid-pics .box-grid {
         margin: 15px;
+        border-radius: 10px;
     }
 
     /* Photo Section */
