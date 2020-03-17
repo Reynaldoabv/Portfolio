@@ -264,6 +264,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar2 {
     grid-area: sidebar2;
     background-color: var(--blackr);
+    height: 200px;
 }
 
 .sidebar2 div {
@@ -319,16 +320,16 @@ body::-webkit-scrollbar-thumb {
 
 .js-bar::before {
     content: '';
-    width: 70%;
+    width: 65%;
     height: 15px;
-    background: yellow;
+    background: var(--greenr);
     position: absolute;
     left:0;
 }
 
 .react-js::before {
     content: '';
-    width: 50%;
+    width: 90%;
     height: 15px;
     background: #2ECCFA;
     position: absolute;
@@ -339,7 +340,7 @@ body::-webkit-scrollbar-thumb {
 .main {
     grid-area: main;
     background-color: var(--blackr);
-    height: 550px;
+    height: 563px;
 }
 
 .box {
