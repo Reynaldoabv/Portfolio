@@ -264,7 +264,7 @@ body::-webkit-scrollbar-thumb {
 .sidebar2 {
     grid-area: sidebar2;
     background-color: var(--blackr);
-    height: 200px;
+    height: 380px;
 }
 
 .sidebar2 div {
@@ -309,11 +309,11 @@ body::-webkit-scrollbar-thumb {
     left:0;
 }
 
-.jquery-bar::before {
+.graphql::before {
     content: '';
     width: 85%;
     height: 15px;
-    background: #14df0d;
+    background: #e10098;
     position: absolute;
     left:0;
 }
@@ -336,11 +336,38 @@ body::-webkit-scrollbar-thumb {
     left:0;
 }
 
+.mongodb::before {
+    content: '';
+    width: 70%;
+    height: 15px;
+    background: #116149;
+    position: absolute;
+    left:0;
+}
+
+.typescript::before {
+    content: '';
+    width: 60%;
+    height: 15px;
+    background: #ffa700;
+    position: absolute;
+    left:0;
+}
+
+.linux::before {
+    content: '';
+    width: 50%;
+    height: 15px;
+    background: #185886;
+    position: absolute;
+    left:0;
+}
+
 /* Profile card (About me section)*/
 .main {
     grid-area: main;
     background-color: var(--blackr);
-    height: 563px;
+    height: 745px;
 }
 
 .box {
@@ -351,7 +378,7 @@ body::-webkit-scrollbar-thumb {
     box-shadow: 0 5px 20px rgba(0, 0, 0, .3);
     overflow: hidden;
     position: absolute;
-    top: 153%;
+    top: 175%;
     left:81.5%;
 }
 
@@ -446,6 +473,20 @@ body::-webkit-scrollbar-thumb {
     box-sizing: border-box;
     z-index: 4;
     background: #fff;
+    padding: 4px;
+    line-height: 2rem;
+    z-index: 1;
+}
+
+.cumplo {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 79px;
+    box-sizing: border-box;
+    z-index: 4;
+    background: #00ba68;
     padding: 4px;
     line-height: 2rem;
     z-index: 1;
@@ -1703,3 +1744,4 @@ body::-webkit-scrollbar-thumb {
     }
 
 }
+
