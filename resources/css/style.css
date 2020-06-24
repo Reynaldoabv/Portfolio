@@ -367,7 +367,7 @@ body::-webkit-scrollbar-thumb {
 .main {
     grid-area: main;
     background-color: var(--blackr);
-    height: 745px;
+    height: 855px;
 }
 
 .box {
